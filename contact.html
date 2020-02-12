@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Contact</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <form method="POST" action="" id="form">
+        <label><strong>Nom: </strong></label>
+        <input type="text" id="nom" name="nom"/></br>
+        <label><strong>Prenom: </strong></label>
+        <input type="text" id="prenom" name="prenom"/></br>
+        <label><strong>e-mail: </strong></label>
+        <input type="email" id="email" name="email"/></br>
+        <label><strong>Civilité: </strong></label>
+        <input type="radio" name="civilite" id="radioM" value="M"/><label><strong>M</strong></label>
+        <input type="radio" name="civilite" id="radioMme" value="Mme"/><label><strong>Mme</strong></label>
+        <input type="radio" name="civilite" id="radioMr" value="Mr"/><label><strong>Mr</strong></label></br>
+        <label><strong>S'inscrire a la Newsletter? </strong></label>
+        <input type="checkbox" id="news" name="news" value="unchecked"/></br>
+        <label><strong>Langue: </strong></label>
+        <select name="langue">
+            <option value="ar">Arabic</option>
+            <option value="en">English</option>
+            <option value="fr">Francais</option>
+        </select></br>
+        <label><strong>Message: </strong></label>
+        <textarea name="message" id="message" form="form" rows="3">Ecrire un text ici...</textarea></br>
+        <input type="submit" id="submit" value="Envoyer"/>
+        <input type="reset" id="reset" value="reset"/>
+    </form>
+</body>
+</html>
